@@ -13,17 +13,8 @@ namespace XFCustomControls.ViewModels
                 Page view;
                 switch (viewName)
                 {
-                    case "EntryExtView":
-                        view = new Views.EntryExtView();
-                        break;
                     case "ListViewExtView":
                         view = new Views.ListViewExtView();
-                        break;
-                    case "PickerExtView":
-                        view = new Views.PickerExtView();
-                        break;
-                    case "SliderExtView":
-                        view = new Views.SliderExtView();
                         break;
                     default:
                         view = new Page();

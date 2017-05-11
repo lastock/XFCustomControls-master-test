@@ -20,19 +20,6 @@ namespace XFCustomControls.Ext
             }
         }
 
-        //public static readonly BindableProperty InfiniteScrollCommandProperty =
-        //    BindableProperty.Create("InfiniteScrollCommand",
-        //            typeof(ICommand),
-        //            typeof(ListView),
-        //            null);
-        //public ICommand InfiniteScrollCommand
-        //{
-        //    get { return (ICommand)GetValue(InfiniteScrollCommandProperty); }
-        //    set
-        //    {
-        //        SetValue(InfiniteScrollCommandProperty, value);
-        //    }
-        //}
 
         public ListView() : base()
         {
@@ -46,7 +33,6 @@ namespace XFCustomControls.Ext
 
         private void Initialize()
         {
-            //ItemAppearing += InfiniteListView_ItemAppearing;
             ItemTapped += ListView_ItemTapped;
         }
 
@@ -56,14 +42,5 @@ namespace XFCustomControls.Ext
                 ItemTappedCommand.Execute(e.Item);
         }
 
-        //private void InfiniteListView_ItemAppearing(object sender, ItemVisibilityEventArgs e)
-        //{
-        //    var items = ItemsSource as IList;
-        //    if (items != null && e.Item == items[items.Count - 1])
-        //    {
-        //        if (InfiniteScrollCommand != null && InfiniteScrollCommand.CanExecute(null))
-        //            InfiniteScrollCommand.Execute(null);
-        //    }
-        //}
     }
 }
