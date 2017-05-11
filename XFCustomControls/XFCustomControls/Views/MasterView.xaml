@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XFCustomControls.Views.MasterView"
+             Title="Menu"
+             >
+    <ScrollView Padding="40">
+        <StackLayout>
+            <Button Text="Entry" Command="{Binding NavigateCommand}" CommandParameter="EntryExtView" />
+            <Button Text="ListView" Command="{Binding NavigateCommand}" CommandParameter="ListViewExtView" />
+            <Button Text="Picker" Command="{Binding NavigateCommand}" CommandParameter="PickerExtView" />
+            <Button Text="Slider" Command="{Binding NavigateCommand}" CommandParameter="SliderExtView" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
